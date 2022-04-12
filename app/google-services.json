@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740346051894",
+    "project_id": "flype-todo-list",
+    "storage_bucket": "flype-todo-list.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740346051894:android:e829ec0e7cfd83a9b00797",
+        "android_client_info": {
+          "package_name": "com.emrecantezguren.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740346051894-4njva7d7rtb2j8qa0mlutt746ntgqqnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA30HAqd8aWs8qcTDFglANLA73hkk2bAhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740346051894-4njva7d7rtb2j8qa0mlutt746ntgqqnq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

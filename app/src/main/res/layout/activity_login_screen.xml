@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/loginandregisterbg"
+    tools:context=".loginscreen.LoginScreen">
+
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flype"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/appNameText"
+        android:layout_width="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="35dp"
+        app:cardCornerRadius="50dp"
+        android:layout_height="350dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           app:cardCornerRadius="50dp"
+           android:layout_height="350dp">
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/emailTIL"
+               android:layout_marginStart="35dp"
+               android:layout_marginEnd="35dp"
+               style="@style/Widget.Design.TextInputLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+               android:hint="Email address">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/username"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textEmailAddress" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/passwordTIL"
+               android:layout_marginStart="35dp"
+               android:layout_marginEnd="35dp"
+               style="@style/Widget.Design.TextInputLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/emailTIL"
+               android:layout_marginTop="15dp"
+               android:hint="Password"
+               app:passwordToggleEnabled="true">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/password"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:imeActionLabel="label"
+                   android:imeOptions="actionDone"
+                   android:inputType="textPassword" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+               android:id="@+id/forgottenPassword"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/passwordTIL"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="35dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="35dp"
+               android:text="Forgotten password?" />
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/loginButton"
+               android:layout_width="match_parent"
+               android:layout_height="56dp"
+               android:layout_below="@id/forgottenPassword"
+               android:layout_marginStart="35dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="35dp"
+               android:backgroundTint="@color/blue"
+               android:text="Login"
+               android:textStyle="bold"
+               app:cornerRadius="10dp" />
+
+           <LinearLayout
+               android:id="@+id/register"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/loginButton"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="32dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="I do not have an account!" />
+
+               <TextView
+                   android:textColor="@color/blue"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:text="Register" />
+
+           </LinearLayout>
+
+       </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
